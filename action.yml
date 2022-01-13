@@ -1,0 +1,16 @@
+name: Actions Ecosystem Bump Calver
+description: Bump a calver version up.
+author: ShotaKitazawa
+inputs:
+  current_version:
+    description: The current version.
+    required: true
+outputs:
+  new_version:
+    description: The bumped calver version.
+runs:
+  using: node12
+  main: dist/index.js
+branding:
+  icon: bookmark
+  color: white
