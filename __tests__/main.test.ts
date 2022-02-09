@@ -6,7 +6,9 @@ describe('freeze time at 2006/1/2 15:04:05', () => {
   let spy: jest.SpyInstance;
   beforeAll(() => {
     const mockDate: Date = new Date('2006/1/2 15:04:05');
-    spy = jest.spyOn<any, any>(global, 'Date').mockImplementation(() => mockDate);
+    spy = jest
+      .spyOn<any, any>(global, 'Date')
+      .mockImplementation(() => mockDate);
   });
   afterAll(() => {
     spy.mockRestore();
@@ -40,7 +42,9 @@ describe('freeze time at 2006/2/2 15:04:05', () => {
   let spy: jest.SpyInstance;
   beforeAll(() => {
     const mockDate: Date = new Date('2006/2/2 15:04:05');
-    spy = jest.spyOn<any, any>(global, 'Date').mockImplementation(() => mockDate);
+    spy = jest
+      .spyOn<any, any>(global, 'Date')
+      .mockImplementation(() => mockDate);
   });
   afterAll(() => {
     spy.mockRestore();
