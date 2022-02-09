@@ -43,7 +43,7 @@ export class Calver {
       this.index += 1;
     } else {
       this.year = String('00' + now.getFullYear()).slice(-2);
-      this.month = String('00' + now.getMonth() + 1).slice(-2);
+      this.month = String('00' + (now.getMonth() + 1)).slice(-2);
       this.index = 0;
     }
     return this;
