@@ -19,11 +19,7 @@ export class Calver {
     this.year = year;
     this.month = month;
     this.index = Number(index);
-    if (currentVersion.startsWith('v')) {
-      this.hasVPrefix = true;
-    } else {
-      this.hasVPrefix = false;
-    }
+    this.hasVPrefix = currentVersion.startsWith('v') ? true : false;
   }
 
   toString(): string {
@@ -42,8 +38,8 @@ export class Calver {
     ) {
       this.index += 1;
     } else {
-      this.year = String('00' + now.getFullYear()).slice(-2);
-      this.month = String('00' + (now.getMonth() + 1)).slice(-2);
+      this.year = String(now.getFullYear()).slice(-2);
+      this.month = String('0' + (Number(now.getMonth()) + 1)).slice(-2);
       this.index = 0;
     }
     return this;
