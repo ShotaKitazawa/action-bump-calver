@@ -11,7 +11,7 @@ export class Calver {
     const index = arr[2];
     if (
       !/[0-9]{2}/.test(year) ||
-      !/(0[1-9]|1[1-2])/.test(month) ||
+      !/(0[1-9]|1[0-2])/.test(month) ||
       isNaN(Number(index))
     ) {
       throw new Error(`${currentVersion} is not a valid calver`);
