@@ -1,6 +1,6 @@
 name: Actions Ecosystem Bump Calver
 description: Bump a calver version up.
-author: ShotaKitazawa
+author: juusopiikkila
 inputs:
   current_version:
     description: The current version.
