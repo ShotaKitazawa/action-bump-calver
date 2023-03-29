@@ -12,6 +12,9 @@ function run(): void {
 
         const newVersion = new Calver(currentVersion).inc().toString();
 
+        console.log(`Current version: ${currentVersion}`);
+        console.log(`New version: ${newVersion}`);
+
         setOutput('new_version', newVersion);
     } catch (error) {
         if (error instanceof Error) {

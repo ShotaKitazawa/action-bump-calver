@@ -1,6 +1,6 @@
 {
     "name": "action-bump-calver",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Bump a calver version up",
     "main": "lib/main.js",
     "scripts": {
