@@ -47,7 +47,7 @@ jobs:
       - uses: actions-ecosystem/action-get-latest-tag@v1
         id: get-latest-tag
 
-      - uses: ShotaKitazawa/action-bump-calver@v1
+      - uses: juusopiikkila/action-bump-calver@v1
         id: bump-calver
         with:
           current_version: ${{ steps.get-latest-tag.outputs.tag }}
@@ -64,8 +64,8 @@ This action is inspired by [actions-ecosystem/action-bump-semver](https://github
 
 <!-- badge links -->
 
-[release]: https://github.com/ShotaKitazawa/action-bump-calver/releases
-[release-badge]: https://img.shields.io/github/v/release/ShotaKitazawa/action-bump-calver?style=for-the-badge&logo=github
+[release]: https://github.com/juusopiikkila/action-bump-calver/releases
+[release-badge]: https://img.shields.io/github/v/release/juusopiikkila/action-bump-calver?style=for-the-badge&logo=github
 
 [license]: LICENSE
-[license-badge]: https://img.shields.io/github/license/ShotaKitazawa/action-bump-calver?style=for-the-badge
+[license-badge]: https://img.shields.io/github/license/juusopiikkila/action-bump-calver?style=for-the-badge
